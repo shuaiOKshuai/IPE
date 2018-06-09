@@ -8,18 +8,18 @@ If you use it for scientific experiments, please cite this paper:
 
 @inproceedings{LiuZKDD18,\
  author = {Zemin Liu and \
-	   Vincent W. Zheng and \
-	   Zhou Zhao and \
-	   Zhao Li and \
-	   Hongxia Yang and \
-	   Minghui Wu and \
-	   Jing Ying}, \
+	Vincent W. Zheng and \
+	Zhou Zhao and \
+	Zhao Li and \
+	Hongxia Yang and \
+	Minghui Wu and \
+	Jing Ying}, \
  title = {Interactive Paths Embedding for Semantic Proximity Search on Heterogeneous Graphs}, \
  booktitle = {The 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '18)}, \
  year = {2018} \
 } 
 
-==========================================================================================
+=====================================================================
 
 We realize IPE model in two modes, the serial mode and the batch mode. These two models are written in python, with theano framework. The batch mode could leverage the GPU for parallel processing better. If you only run a small dataset on CPU, you can also use serial mode. We take the serial mode for example.
 
