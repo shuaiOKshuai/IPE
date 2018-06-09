@@ -1,22 +1,22 @@
 # Interactive Paths Embedding for Semantic Proximity Search on Heterogeneous Graphs
 The resources are for our KDD-18 paper IPE.\
-Zemin Liu, Vincent W. Zheng, Zhou Zhao, Zhao Li, Hongxia Yang, Minghui Wu and Jing Ying. Interactive Paths Embedding for Semantic Proximity Search on Heterogeneous Graphs. In Proc. of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '18), London, United Kingdom, 19 – 23 AUGUST, 2018.
+Zemin Liu, Vincent W. Zheng, Zhou Zhao, Zhao Li, Hongxia Yang, Minghui Wu and Jing Ying. *Interactive Paths Embedding for Semantic Proximity Search on Heterogeneous Graphs.* In Proc. of the 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '18), London, United Kingdom, 19 – 23 AUGUST, 2018.
 
 This python project implements the IPE model proposed in the above paper. \
 Please refer to the above paper for all the details of this model. \
 If you use it for scientific experiments, please cite this paper:
 
-@inproceedings{LiuZKDD18,\
- author = {Zemin Liu and \
-	Vincent W. Zheng and \
-	Zhou Zhao and \
-	Zhao Li and \
-	Hongxia Yang and \
-	Minghui Wu and \
-	Jing Ying}, \
- title = {Interactive Paths Embedding for Semantic Proximity Search on Heterogeneous Graphs}, \
- booktitle = {The 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '18)}, \
- year = {2018} \
+@inproceedings{LiuZKDD18, \
+>author = {Zemin Liu and \
+>>Vincent W. Zheng and \
+>>Zhou Zhao and \
+>>Zhao Li and \
+>>Hongxia Yang and \
+>>Minghui Wu and \
+>>Jing Ying}, \
+>title = {Interactive Paths Embedding for Semantic Proximity Search on Heterogeneous Graphs}, \
+>booktitle = {The 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '18)}, \
+>year = {2018} \
 } 
 
 =====================================================================
