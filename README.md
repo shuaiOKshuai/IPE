@@ -31,4 +31,4 @@ For batch mode, there are another two files: <br>
 **SplitTestDatasetsIntoMultiFiles.py** : As there may be too many sequences(interactive paths structures) for the test data, you can filter the valid sequences out for test data, to save space. <br>
 **reorgnizeSubpaths.py** : As there may be too many subpaths between some node pairs, we need to filter the subpaths with max path number.
 
-For more details, you can refer to our paper. Thanks !
+For more details, please refer to our paper. Thanks !
