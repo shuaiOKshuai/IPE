@@ -1,0 +1,93 @@
+[param]
+
+############################################
+# training data info
+############################################
+# datasets root dir
+root_dir = /home/yz1/liuzemin/lzmExperiment/interactiveGRU-experiment/datasetCollectFromServers/icde-dataset
+# dataset name, such as facebook, linkedin
+dataset_name = linkedin
+# the suffix of each dataset, such as 10,100 and 1000
+suffix = 100
+# the relation name, such as family, school
+class_name = school
+# the index of the dataset file
+index = 1
+
+############################################
+# the prepared data info
+############################################
+# words embeddings path
+wordsEmbeddings_path = %(root_dir)s/%(dataset_name)s/nodesFeatures
+# words types vector path
+typesEmbeddings_path = %(root_dir)s/%(dataset_name)s/typesFeatures
+# sub-paths file
+subpaths_file = %(root_dir)s/%(dataset_name)s/subpathsSaveFile
+# interactive paths save file
+sequences_file = %(root_dir)s/%(dataset_name)s/sequencesSaveFile
+
+############################################
+# parameters, which needs little change
+############################################
+# the max length for subpath, we will remove the subpaths which longer than this max length
+maxlen_subpaths = 1000
+# the size of vocabulary
+wordsSize = 10000000
+# Sequence longer then this get ignored 
+maxlen = 1000
+# batch size 
+batch_size = 100
+# shuffle for batch or not
+is_shuffle_for_batch = True
+# display frequency
+dispFreq = 5
+# save frequency
+saveFreq = 5
+# parameters save file
+saveto = 
+# the top num to predict, we set top_num=10
+top_num = 10
+
+############################################
+# hyper parameters for experiments
+############################################
+# learning rate
+lrate = 0.0001
+
+# word embedding dimension
+word_dimension = 32
+# type dim
+type_dimension = 10
+
+# embedding dimension
+dimension = 32
+
+# parameter alpha
+alpha = 0.5
+# we split the parameter beta in the paper into two parameters, beta and gamma as following
+# parameter beta, which is used when aggregating multiple paths
+beta = 0.1
+# parameter gamma, which is used when aggregating multiple predecessors
+gamma = 0.1
+
+# loss function
+objective_function_method = sigmoid
+# loss function parameter
+objective_function_param = 1.0
+# the max epochs in training 
+max_epochs = 150
+# the parameter of decay
+decay = 0.0001
+
+############################################
+# Parameters for interactive paths generation
+############################################
+# repeat times
+repeatTimes = 3
+# repeat proportion
+repeatProportion = 0.0
+# max num for paths
+maxPathNum = 20
+############################################
+# attention dimension, do not need
+attention_dimension = 6

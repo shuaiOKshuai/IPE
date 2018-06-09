@@ -1,0 +1,94 @@
+[param]
+
+############################################
+# data info
+############################################
+# main work dir
+root_dir = D:/dataset/dataset
+# the name of one dataset, such as facebook, linkedin
+dataset_name = linkedin
+# the suffix of dataset, such as 10,100,1000
+suffix = 100
+# the relation name of data, such as classmate, family, school, work
+class_name = school
+# the index of the dataset file
+index = 1
+
+############################################
+# # the prepared data info
+############################################
+# words embeddings path
+wordsEmbeddings_path = %(root_dir)s/%(dataset_name)s/nodesFeatures
+# words types vector path
+typesEmbeddings_path = %(root_dir)s/%(dataset_name)s/typesFeatures
+# sub-paths file
+subpaths_file = %(root_dir)s/%(dataset_name)s/subpathsSaveFile
+# interactive paths save file
+sequences_file = %(root_dir)s/%(dataset_name)s/sequencesSaveFile
+
+############################################
+# parameters that needs little change
+############################################
+# maxlen for subpath
+maxlen_subpaths = 1000
+# words vocabulary 
+wordsSize = 1000000
+# max len for a sentence
+maxlen = 1000
+#  batch_size 
+batch_size = 10
+#  shuffle for training tuples or not
+is_shuffle_for_batch = True
+# display freq
+dispFreq = 5
+# save freq
+saveFreq = 5
+# model save path
+saveto = 
+# the top num to predict, we set top_num=10
+top_num = 10
+
+############################################
+# hyper parameters for experiments
+############################################
+# learning rate
+lrate = 0.0001
+
+#  word embedding dimension
+word_dimension = 32
+# type dim
+type_dimension = 10
+
+# embedding dimension
+dimension = 32
+
+# parameter alpha
+alpha = 0.5
+# we split the parameter beta in the paper into two parameters, beta and gamma as following
+# parameter beta, which is used when aggregating multiple paths
+beta = 0.1
+# parameter gamma, which is used when aggregating multiple predecessors
+gamma = 0.1
+
+# loss function type
+objective_function_method = sigmoid
+# loss function parameter
+objective_function_param = 1.0
+# the max epochs in training 
+max_epochs = 150
+# decay parameter
+decay = 0.0001
+
+############################################
+# Parameters for interactive paths generation
+############################################
+# repeat times
+repeatTimes = 3
+# the repear proportion
+repeatProportion = 0.0
+# max num for paths
+maxPathNum = 20
+
+############################################
+# attention dimension, not use
+attention_dimension = 6
