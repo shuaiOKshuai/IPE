@@ -6,20 +6,24 @@ This python project implements the IPE model proposed in the above paper. <br>
 Please refer to the above paper for all the details of this model. <br>
 If you use it for scientific experiments, please cite this paper:
 
-@inproceedings{LiuZKDD18, <br>
-author = {Zemin Liu and <br>
-Vincent W. Zheng and <br>
-Zhou Zhao and <br>
-Zhao Li and <br>
-Hongxia Yang and <br>
-Minghui Wu and <br>
-Jing Ying}, <br>
-title = {Interactive Paths Embedding for Semantic Proximity Search on Heterogeneous Graphs}, <br>
-booktitle = {The 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '18)}, <br>
-year = {2018} <br>
-} 
+# Cite
+
+      @inproceedings{LiuZKDD18, 
+        author = {Zemin Liu and 
+        Vincent W. Zheng and 
+        Zhou Zhao and 
+        Zhao Li and 
+        Hongxia Yang and 
+        Minghui Wu and 
+        Jing Ying}, 
+        title = {Interactive Paths Embedding for Semantic Proximity Search on Heterogeneous Graphs},
+        booktitle = {The 24th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD '18)}, 
+        year = {2018} 
+      } 
 
 =====================================================================
+
+# Details
 
 We realize IPE model in two modes, the serial mode and the batch mode. These two models are written in python, with theano framework. The batch mode could leverage the GPU for parallel processing better. If you only run a small dataset on CPU, you can also use serial mode. We take the serial mode for example.
 
@@ -30,5 +34,8 @@ We realize IPE model in two modes, the serial mode and the batch mode. These two
 For batch mode, there are another two files: <br>
 **SplitTestDatasetsIntoMultiFiles.py** : As there may be too many sequences(interactive paths structures) for the test data, you can filter the valid sequences out for test data, to save space. <br>
 **reorgnizeSubpaths.py** : As there may be too many subpaths between some node pairs, we need to filter the subpaths with max path number.
+
+# Note
+We also provided the sub-path generation code in one of our previous projects. Please see our project ProxEmbed (https://github.com/shuaiOKshuai/ProxEmbed; in the code, either symmetric or asymmetric is OK; we utilize the java code to prepare the data). In particular, in file https://github.com/shuaiOKshuai/ProxEmbed/blob/master/code/asymmetric/java%20-%20prepare%20data%20for%20model/Main.java, we conduct random walk to sample paths in line 23, and generate the sub-paths from the sampled paths in line 32.
 
 For more details, please refer to our paper. Thanks !
